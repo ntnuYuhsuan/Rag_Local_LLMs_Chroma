@@ -47,7 +47,7 @@ FAQ_answer = raw['A'].to_dict()
 persistent_client = chromadb.HttpClient(host='127.0.0.1', port=8000)
 vectorstore = Chroma(
     client=persistent_client,
-    collection_name="online_banking",
+    collection_name="rag-chroma",
     embedding_function=OpenAIEmbeddings()
 )
 retriever = vectorstore.as_retriever()
