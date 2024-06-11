@@ -1,0 +1,4 @@
+name: ollama
+channels:
+  - defaults
+prefix: /opt/conda/envs/ollama
